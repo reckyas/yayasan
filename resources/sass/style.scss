@@ -1,0 +1,378 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+section#header {
+    background: #294a70;
+    border-bottom: 5px solid orange;
+}
+
+.top-head {
+    background: #1b486d;
+    color: #fff;
+}
+
+.top-head ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+
+.top-head ul li {
+    padding: 5px;
+}
+
+.header-top {
+    background: #fff;
+    padding: 15px 0;
+}
+
+.logo-header .title-site {
+    color: #294a70;
+    text-decoration: inherit;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-header .title-site p {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.logo-header img {
+    max-width: 100%;
+    height: 80px;
+}
+
+.site-description {
+    color: #666666;
+    font-size: 14px;
+    font-style: inherit;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    word-break: break-word;
+}
+
+
+input.search {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px 25% 10px 5%;
+    width: 100%;
+    box-sizing: inherit;
+    outline: none;
+    color: #666;
+    border: 1px solid #ccc;
+}
+
+.tombol {
+    background: #1b486d;
+    border: medium none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px 20px;
+    outline: none;
+}
+
+.tombol:hover {
+    background: orange;
+}
+
+.bg-costume {
+    background: #294a70;
+}
+
+.dropdown-menu {
+    background: #ffed4a;
+}
+
+.dropdown-item {
+    color: #343a40;
+    font-weight: 800;
+}
+
+// Slider
+
+section#slider {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.img-slide {
+    height: 100%;
+}
+
+.control-right,
+.control-left {
+    width: 50px;
+    height: 50px;
+    /* position: absolute; */
+    background: #294a70;
+    bottom: 10px;
+    top: 40%;
+}
+
+.control-right {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.control-left {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.control-right:hover,
+.control-left:hover {
+    opacity: 1;
+}
+
+// Hero
+
+section#hero {
+    padding: 40px 0;
+}
+
+.title-section {
+    margin: 20px 0 50px 0;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 320px) {
+    .title-section {
+        font-size: 16px;
+    }
+}
+
+.title-section::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-bottom: 4px solid orange;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.shadow-box {
+    box-shadow: 1px 4px 3px 0px #ccc;
+    transition: 0.3s;
+    max-height: 350px;
+    overflow: hidden;
+}
+
+.shadow-box:hover {
+    box-shadow: 0px 6px 14px 3px #ccc;
+    transform: scale(1.1);
+    margin-bottom: 10px;
+    z-index: 1000;
+}
+
+.img-wrap-hero {
+    max-height: 100%;
+}
+
+// Events
+section#event {
+    background: #e9ecef;
+    padding: 40px 0;
+}
+
+.banner {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    // border-left: 5px solid #2f8ae3;
+    box-shadow: 6px 6px 9px 3px #a7a7a7;
+}
+
+.banner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.banner:hover>img {
+    transform: scale(1.1);
+}
+
+.evnt-date {
+    position: absolute;
+    left: -100%;
+    padding: 10px;
+    top: 10px;
+    background: #1edc1e;
+    font-weight: 400;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.4s;
+    z-index: 1000;
+}
+
+.evnt-caption {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(255, 250, 52, 0.8);
+    font-weight: 800;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: 0.4s;
+}
+
+.banner:hover>.evnt-date {
+    left: 0;
+}
+
+.banner:hover>.evnt-caption {
+    bottom: 0;
+}
+
+.next {
+    display: inline-block;
+    padding: 10px;
+    border: 3px solid #0f2f86;
+    background: transparent;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0;
+    color: #343a40;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.next:hover {
+    background: #0c1f3d;
+    text-decoration: none;
+    color: #fff;
+}
+
+// Main
+
+
+section#main {
+    padding: 40px 0;
+}
+
+.article {
+    background: #f3f3f3 none repeat scroll 0 0;
+    border-top: 4px solid orange;
+}
+
+.article h5 {
+    color: #294a70;
+    font-weight: 800;
+}
+
+.article p {
+    color: #666666;
+}
+
+.date-published {
+    color: #294a70;
+    text-decoration: inherit;
+    margin-bottom: 10px;
+}
+
+// Footer
+
+section#footer {
+    border-top: 5px solid orange;
+    background: #294a70;
+    min-height: 200px;
+    padding: 35px 0;
+}
+
+.footer-widget {
+    border-right: 1px dashed #0c1f3d;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 575px) {
+    .footer-widget {
+        border-right: none;
+        border-bottom: 1px dashed #0c1f3d;
+    }
+}
+
+.footer-widget:last-child {
+    border: none;
+}
+
+.footer-widget h3 {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.footer-widget h3::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 57px;
+    left: 0;
+    background: #1edc1e;
+    height: 4px;
+
+}
+
+.sosmed {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sosmed li {
+    display: inline-block;
+}
+
+.sosmed li a {
+    display: inline-block;
+    margin: 5px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #666;
+    text-decoration: none;
+}
+
+.sosmed li a:hover {
+    background: orange;
+    color: #fff;
+}
+
+.site-footer {
+    background: #15305b;
+    padding: 20px 0;
+}
+
+// Copyright
+section#copy {
+    background: #15305b;
+    padding: 15px;
+}
+
+section#copy p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: block;
+    color: #fff;
+}
